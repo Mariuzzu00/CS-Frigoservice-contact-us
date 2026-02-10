@@ -1,0 +1,65 @@
+/*
+Theme Name: Contact Us CS Frigoservice
+Description: Contact Us CS Frigoservice
+Version: 1.0
+*/
+
+/*--------------------------------------------------------------
+Styles
+--------------------------------------------------------------*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Fonts */
+:root {
+    --heading-font: "Lora", serif;
+    --body-font: "Poppins", serif;
+}
+
+/* Bootstrap Override */
+body {
+    background-color: #f0f0f0;
+    --bs-font-sans-serif: "Poppins", serif;
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 2;
+    --bs-body-color: #222222;
+}
+
+h3,
+h4 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.form-control:focus {
+    border-color: #3f3f3f;
+}
+
+.bg-image {
+    background-image: url('https://i.imgur.com/LJHBzmV.png');
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .bg-image {
+        height: 65vh;
+    }
+
+    .top-margin {
+        margin-top: 150px;
+    }
+}
